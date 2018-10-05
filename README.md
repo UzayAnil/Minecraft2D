@@ -1,4 +1,4 @@
-# minecraft2D.github.io
+# Minecraft2D
 <b>2D Minecraft Clone written in javascript.</b>
 
 <b>Controls</b>
