@@ -1,4 +1,8 @@
-function wood(){
-    this.placeable = true;
-    this.name = "wood";
-}
+let items = {
+    wood: {
+        name: "wood",
+        visualName: "Wood",
+        placeable: true,
+        solid: true
+    }
+};
