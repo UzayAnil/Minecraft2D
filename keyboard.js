@@ -2,23 +2,10 @@ var left = false;
 var right = false;
 var up = false;
 var down = false;
-var mouseX = 0;
-var mouseX = 0;
 
 setTimeout(() => {
-    document.onmousemove = onMouseMove;
-    document.onmousedown = onMouseDown;
     document.onkeydown = onKeyDown;
 }, 500)
-
-function onMouseMove(evt){
-    mouseX = evt.pageX;
-    mouseY = evt.pageY;
-}
-
-function onMouseDown(evt){
-    setPixel(Math.floor(mouseX / 29), Math.floor(mouseY / 25), "red");
-}
 
 function onKeyDown(evt){
     if(evt.key == "a"){
@@ -34,19 +21,31 @@ function onKeyDown(evt){
         down = true;
     }
     if(evt.key == "1"){
-        player.selectSlot(1);
+        player.selectedSlot = 0;
     }
     if(evt.key == "2"){
-        player.selectSlot(2);
+        player.selectedSlot = 1;
     }
     if(evt.key == "3"){
-        player.selectSlot(3);
+        player.selectedSlot = 2;
     }
     if(evt.key == "4"){
-        player.selectSlot(4);
+        player.selectedSlot = 3;
     }
     if(evt.key == "5"){
-        player.selectSlot(5);
+        player.selectedSlot = 4;
+    }
+    if(evt.key == "6"){
+        player.selectedSlot = 5;
+    }
+    if(evt.key == "7"){
+        player.selectedSlot = 6;
+    }
+    if(evt.key == "8"){
+        player.selectedSlot = 7;
+    }
+    if(evt.key == "9"){
+        player.selectedSlot = 8;
     }
 }
 

@@ -1,26 +1,50 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Minecraft 2D</title>
-        <style>
-        body{
+
+<head>
+    <meta charset="utf-8">
+    <title>Minecraft 2D</title>
+    <style>
+        body {
             margin: 0%;
             padding: 0%;
+            background-color: lightblue;
         }
-        canvas{
+
+        .canvas-holder {
             width: 100%;
-            height: 100%;
-            margin: 0%;
-            padding: 0%;
+            text-align: center;
         }
-        </style>
-    </head>
-    <body>
+
+        canvas {
+            width: 850px;
+            height: 650px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        window.oncontextmenu = function () {
+            return false;
+        }
+    </script>
+    <div class="canvas-holder">
         <canvas id="canvas"></canvas>
-        <script src="map.js"></script>
-        <script src="character.js"></script>
-        <script src="control.js"></script>
-        <script src="items.js"></script>
-        <script src="game.js"></script>
-    </body>
+    </div>
+    <script src="gui.js"></script>
+    <script src="world.js"></script>
+    <script src="character.js"></script>
+    <script src="keyboard.js"></script>
+    <script src="items.js"></script>
+    <script src="blocks.js"></script>
+    <script src="game.js"></script>
+</body>
+
 </html>

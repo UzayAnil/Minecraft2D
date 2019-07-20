@@ -3,6 +3,7 @@ let items = {
         name: "wood",
         visualName: "Wood",
         placeable: true,
-        solid: true
+        solid: true,
+        count: 1
     }
 };
